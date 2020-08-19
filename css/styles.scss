@@ -1,0 +1,24 @@
+@import "./reset";
+@import "./colors";
+@import "./header";
+@import "./slider-config";
+@import "./home-content";
+@import "./footer";
+@import "./seminovas";
+@import "./card-bikes";
+@import "./store";
+@import "./about";
+@import "./contact";
+
+
+body {
+    margin: 0 auto;
+    background-color: $light-grey;
+    .section_1_slider {
+        margin-bottom: 5em;
+    }
+    .home_content {
+        max-width: 1300px;
+        margin: 0 auto;        
+    }
+}

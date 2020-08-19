@@ -1,0 +1,63 @@
+.store_page_content {
+    position: relative;
+    max-width: 1300px;
+    margin: 0 auto;
+    font-family: 'Rowdies', cursive; 
+    h1 {
+        color: #ffffff;
+        text-align: center;
+        font-size: 40px;
+        margin: 1em;
+    }
+    .store_cards {
+        font-family: 'Alata', sans-serif;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0 .5em;
+        .card_product {
+            background-color: $white;
+            padding: 1em .5em;
+            border: 1px solid $orange;
+            text-align: center;
+            margin: .5em;
+            img {
+                width: 80%;
+            }
+            .prod_title {
+                color: $dark-grey;
+                font-size: 16px;
+                padding: 1em 0;
+            }
+            .prod_size {
+                color: $medium-grey;
+                font-size: 13px;
+                padding-bottom: 1em;
+            }
+            .prod_price {
+                color: $orange;
+                font-size: 20px;
+                font-weight: bold;
+                padding: 1em 0;
+            }
+            .prod_buy {
+                button {
+                    padding: .5em 1em;
+                    margin: 1em 0;
+                    background-color: $dark-grey;
+                    border: 1px solid $dark-grey;
+                    color: $white;
+                    font-size: 18px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    cursor: pointer;
+                    transition: all 150ms ease-in;
+                    &:hover {
+                        background-color: $white;
+                        color: $dark-grey;
+                    }
+                }
+            }
+        }
+    }
+}

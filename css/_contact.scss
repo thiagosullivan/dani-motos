@@ -1,0 +1,80 @@
+.contact_page_container {
+    background-color: $dark-grey;
+    padding: 0 0 10em;
+    h1 {
+        color: $white;
+        text-align: center;
+        font-size: 40px;
+        padding: 1em 1em 3em;
+        font-family: 'Rowdies', cursive; 
+        text-transform: uppercase;
+    }
+    .contact_form {
+        max-width: 1300px;
+        margin: 0 auto;
+        font-family: 'Alata', sans-serif;
+        position: relative;        
+        #contact-form {
+            background-color: $orange;
+            max-width: 70%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 8em 2em 4em;
+            .form_logo {
+                max-width: 170px;
+                width: 100%;
+                position: absolute;
+                top: -80px;
+            }
+            .form_control {
+                max-width: 800px;
+                width: 100%;
+                padding: 1em;
+                margin-bottom: 1em;
+                border: none;
+                font-family: 'Alata', sans-serif;
+                color: $dark-grey;
+                &::placeholder {
+                    font-family: 'Alata', sans-serif;
+                    font-size: 14px;
+                }
+            }
+            .form_submit {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 40%;
+                margin-top: 3em;
+                background-color: $dark-grey;
+                border: 2px solid transparent;
+                padding: 1em 0;
+                cursor: pointer;
+                transition: all 150ms ease-in-out;
+                &:hover {
+                    background-color: $orange;
+                    border: 2px solid $dark-grey;
+                    border-radius: 20px;
+                }          
+                img {
+                    max-width: 50px;
+                    margin-right: 20px;
+                }
+                input {
+                    background-color: transparent;
+                    color: $white;
+                    font-size: 16px;
+                    border: none;
+                    font-weight: bold;;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 920px){
+    .form_submit {
+        width: 100% !important;
+    }
+}

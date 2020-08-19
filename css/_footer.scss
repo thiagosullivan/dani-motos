@@ -1,0 +1,108 @@
+footer {
+    font-family: 'Alata', sans-serif;
+    font-size: 14px;
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: space-between;
+    padding: 3em;
+    .footer_social_media {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        a {
+            transition: all 150ms ease-in;
+            &:hover {
+                opacity: .8;
+            }
+            img {
+                max-width: 50px;
+            }
+        }
+    }
+    .footer_col2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .footer_logo {
+            max-width: 200px;
+            margin-bottom: 3em;
+        }
+        .footer_col2_row2 {
+            display: flex;
+            .footer_address_container {
+                display: flex;
+                align-items: center;
+                padding-right: 2em;
+                img {
+                    width: 30px;
+                    height: 35px;
+                    padding-right: 1em;
+                }
+            }
+            .footer_hour {
+                display: flex;
+                align-items: center;
+                img {
+                    width: 30px;
+                    height: 35px;
+                    padding-right: 1em;
+                }
+            }            
+        }
+    }
+    .footer_phones {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        .footer_ph {
+            display: flex;
+            align-items: center;
+            img {
+                max-width: 35px;
+            }
+        }
+    }
+}
+
+
+/* media query */
+@media screen and (max-width: 920px){
+    footer {
+        flex-direction: column;
+        .footer_social_media {
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin: 3em 0;
+            order: 1;
+        }
+        .footer_col2 {
+            .footer_col2_row2 {
+                flex-direction: column;
+                padding-bottom: 2em;
+                order: 2;
+                border-bottom: 1px solid $dark-grey;
+                .footer_address_container {
+                    padding: 0 0 2em;
+                }
+            }
+        }
+        .footer_phones {
+            align-items: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-top: 2em;
+            border-bottom: 1px solid $dark-grey;
+            .footer_ph {
+                margin-bottom: 2em;
+                &:after {
+                    content: "|";
+                    padding-right: 10px;
+                    font-size: 20px;
+                }
+                p {
+                    padding-right: 1em;
+                }
+            }
+        }
+    }
+}

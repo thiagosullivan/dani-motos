@@ -1,0 +1,153 @@
+.section_2_highlight {
+    font-family: 'Rowdies', cursive;
+    border-top: 1px solid $dark-grey;
+    h1 {
+        color: $orange;
+        font-size: 40px;
+        text-align: center;
+        padding: 1em 0;
+        text-transform: uppercase;
+    }
+    .card_hl {
+        border: 1px solid $orange;
+        margin-bottom: 2em;
+        padding: 3em;
+        h2 {
+            font-size: 30px;
+            text-align: center;
+            margin-bottom: 1em;
+            text-transform: uppercase;
+        }
+        .card_hl_content {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            .card_hl_img {
+                width: 50%;
+            }
+            .card_hl_desc {
+                width: 50%;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                .bike_name_card_hl {
+                    font-size: 30px;
+                }
+                .price_card_hl {
+                    color: $orange;
+                    font-size: 35px;
+                }
+                .year_card_hl {
+                    font-size: 18px;
+                    color: $medium-grey;
+                }
+                .km_card_hl {
+                    font-size: 18px;
+                    color: $medium-grey;
+                }
+                .btn_card_hl button {
+                    font-size: 20px;
+                    border: 1px solid $orange;
+                    background-color: $light-grey;
+                    color: $orange;
+                    padding: 1em 3em;
+                    transition: all 150ms ease-in;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: $orange;
+                        border: 1px solid transparent;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* SECTION 3 */
+.section_3_estoque {
+    font-family: 'Rowdies', cursive;
+    padding: 2em 0;
+    background-color: $dark-grey;
+    .estoque_content {
+        max-width: 1300px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        p {
+            color: #ffffff;
+            font-size: 30px;
+            text-transform: uppercase;
+        }
+        a {
+            text-decoration: none;            
+            button {
+                font-family: 'Rowdies', cursive;
+                border: 1px solid $orange;
+                background-color: transparent;
+                color: #ffffff;
+                padding: 1em 2em;
+                display: flex;
+                align-items: center;
+                font-size: 20px;
+                cursor: pointer !important;
+                transition: all 150ms ease-in;
+                &:hover {
+                    background-color: $orange;
+                }
+                img {
+                    max-height: 40px;
+                    padding-right: 1em;
+                }
+            }
+        }        
+    }
+}
+
+/* media query */
+@media screen and (max-width: 920px){
+    /*section 2*/
+    .section_2_highlight {
+        .card_hl {
+            text-align: center;
+            padding: 2em !important;
+            .card_hl_content {
+                flex-direction: column;
+                align-items: center;
+                .bike_name_card_hl {
+                    margin: 1em 0 10px;
+                }
+                .price_card_hl {
+                    margin: 10px 0;
+                }
+                .year_card_hl {
+                    margin: 10px 0;
+                }
+                .km_card_hl {
+                    margin: 10px 0;
+                }
+                .card_hl_img {
+                    width: 100% !important;
+                }
+                .btn_card_hl {
+                    margin: 1em 0;
+                }
+            }
+        }
+    }
+    /*section 3*/
+    .section_3_estoque {
+        padding: 2em;
+    }
+    
+    .estoque_content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .section_3_estoque .estoque_content p {
+        margin-bottom: 1em;
+    }
+}

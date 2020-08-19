@@ -1,0 +1,121 @@
+.card_page_container {
+    background-color: $dark-grey;
+    h1 {
+        color: $white;
+        text-align: center;
+        font-size: 40px;
+        padding: 1em;
+        font-family: 'Rowdies', cursive; 
+        text-transform: uppercase;
+    }
+    .sem_estoque {
+        font-family: 'Rowdies', cursive; 
+        h2 {
+            color: $orange;
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 2em;
+        }
+        p {
+            color: $white;
+            margin-bottom: 2em;
+        }
+        button {
+            background-color: $dark-grey;
+            border: 1px solid $orange;
+            color: $orange;
+            width: 100%;
+            padding: 1em 0;
+            font-size: 20px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 150ms ease-in;
+            &:hover {
+                background-color: $orange;
+                color: $white;
+            }
+        }
+    }
+    .bike_page_content {
+        text-align: center;
+        max-width: 1300px;
+        margin: 0 auto;
+        padding-bottom: 3em;
+        .bike_card_sell {
+            display: flex;
+            justify-content: space-evenly;
+            width: 80%;
+            margin: 0 auto 4em;
+            border-top: 1px solid $orange;
+            padding: 1.5em;
+            .estoque_logo {
+                width: 100%;
+                max-width: 350px !important;
+            }
+            img {
+                max-width: 500px;
+                width: 100%;
+                margin-right: 2em;
+            }
+            .card_sell_desc {
+                text-align: left;
+                h3 {
+                    font-family: 'Rowdies', cursive; 
+                    color: $orange;
+                    font-size: 30px;
+                    text-transform: uppercase;
+                    padding: .5em 0;
+                }
+                .card_sell_desc_txt {                    
+                    .card_desc {
+                        color: $white;
+                        font-family: 'Alata', sans-serif;
+                        padding: .5em 0;
+                    }
+                    .card_sell_price {
+                        font-family: 'Rowdies', cursive;
+                        color: $orange;
+                        font-size: 40px;
+                        padding: .5em 0;
+                    }
+                    button {
+                        background-color: $dark-grey;
+                        border: 1px solid $orange;
+                        color: $orange;
+                        width: 100%;
+                        padding: 1em 0;
+                        font-size: 20px;
+                        text-transform: uppercase;
+                        cursor: pointer;
+                        transition: all 150ms ease-in;
+                        &:hover {
+                            background-color: $orange;
+                            color: $white;
+                        }
+                    }
+                }                
+            }
+        }
+    }
+}
+
+
+/* media query */
+@media screen and (max-width: 920px){
+    .bike_page_content {
+        .bike_card_sell {
+            flex-direction: column;
+            align-items: center;
+            text-align: center !important;
+            img {
+                margin-bottom: 2em;
+            }
+            .card_sell_desc {
+                text-align: center !important;
+                button {
+                    margin-top: 2em;
+                }
+            }
+        }
+    }
+}

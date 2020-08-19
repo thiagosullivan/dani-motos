@@ -1,0 +1,94 @@
+.seminovas_page_content {
+    position: relative;
+    max-width: 1300px;
+    margin: 0 auto;
+    font-family: 'Rowdies', cursive;    
+    h1 {
+        color: #ffffff;
+        text-align: center;
+        font-size: 40px;
+        margin: 1em;
+    }
+    .tabs_container {
+        text-align: center;
+        .tab_options {
+            display: flex;
+            font-size: 20px;
+            color: #ffffff;
+            justify-content: center;
+            li {
+                background-color: $orange;
+                padding: 1em;
+                border: 1px solid $black;
+                text-transform: uppercase;
+                cursor: pointer;
+                transition: all 150ms ease-in;
+                &:hover {
+                    background-color: $dark-grey;
+                    border: 1px solid $orange;
+                }
+            }
+        }
+        .tab_content {            
+            .tab_content_txt {
+                color: $dark-grey;
+                h3 {
+                    font-size: 30px;
+                    margin: 1em 0;
+                }
+                p {
+                    font-size: 20px;
+                    font-weight: 100;
+                    max-width: 600px;
+                    margin: 0 auto 2em;
+                    text-align: justify;
+                }
+            }
+            .tab_btn button {
+                font-family: 'Rowdies', cursive;
+                margin: 2em 0;
+                font-size: 30px;
+                background-color: $dark-grey;
+                color: #ffffff;
+                border: 1px solid $dark-grey;
+                padding: .5em 2em;
+                cursor: pointer;
+                transition: all 150ms ease-in;
+                &:hover {
+                    background-color: #ffffff;
+                    color: $dark-grey;
+                }
+            }
+        }
+    }
+    
+}
+
+#tab_sportster,
+#tab_softail,
+#tab_touring,
+#tab_cvo {
+    background-color: $white;
+    border: 1px solid $orange;
+    transition: all 150ms ease-out;
+}
+#tab_sportster img,
+#tab_softail img,
+#tab_touring img,
+#tab_cvo img {
+    max-width: 550px;
+    width: 100%;
+    border-bottom: 1px solid $dark-grey;
+}
+
+
+/* tabs config */
+[data-tab-content] {
+    opacity: 0;
+    display: none;
+}
+
+.active[data-tab-content] {
+    opacity: 1;
+    display: block;
+}
